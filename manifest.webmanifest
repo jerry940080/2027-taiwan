@@ -1,0 +1,25 @@
+{
+  "name": "台東・花東縱谷・東海岸 旅遊懶人包",
+  "short_name": "台東行",
+  "description": "2027/5/24–5/28 台東 5 天 4 夜，四位長輩的慢遊",
+  "lang": "zh-Hant-TW",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5ead8",
+  "theme_color": "#f5ead8",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
