@@ -58,7 +58,7 @@
   `RESTO` 16 列、`SPOT_TREE` 四區單層、`FOOD_TREE=[]`、`MAP_ZONES={}`、`AREAMAPS=[]` 並刪掉 `areaHTML`（靜岡總覽）與 strip 連結；
   靜態 HTML：head、hero、交通頁（路線圖 SVG、每日交通 5 張卡、「長輩出遊須知」取代自駕須知、票價一覽表）、美食與行李、花費導言、footer、手機首頁文字。
   `izu-` → `tte-`（19 處）、`Asia/Tokyo` → `Asia/Taipei`、`dayDiff` 2027-05-24、`wxFetch` 5/8–5/29、維基改 `zh.wikipedia.org`、`renderCost` 摘要改成全 NT。
-  `sw.js` `V='tte-v1'`、manifest、icons（PIL 畫的海與山）、`trip.json`（`tentative:true`）。
+  `sw.js` `V='tte-v2'`（activate 只清 `tte-` 前綴的舊快取，不會動到同網域其他行程網站）、manifest、icons（PIL 畫的海與山）、`trip.json`（`tentative:true`）。
 - **踩雷**：WebFetch 連不到 share.google／youtube；`make_geo.py` 下載 40 MB 檔會被代理切斷（`IncompleteRead`），改 `curl -C -` 續傳；
   Natural Earth 太粗，改 g0v 縣界聯集；天氣徽章原本蓋住 Day 5 的糖廠標記，把台東的 `WX_LOC` 座標移到外海 (22.745,121.175)。
 - 驗證：`node .claude/skills/trip-guide/scripts/check.js index.html <scratchpad>/shots` 全部通過、無落海；scratchpad `tools/shots.js` 等動畫跑完截手機每天地圖、景點子區、桌機每日區塊與交通頁，逐張看過。
